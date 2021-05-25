@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+}
+
+body {
+  background-image: url(billeder/baggrundsbillede_1.webp);
+}
+
+/****************MENU OG FOOTER*************/
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: orange;
+}
+
+a:hover {
+  color: plum;
+}
+
+header {
+  position: sticky;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Belleza", sans-serif;
+  padding: 10px;
+  margin: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: orange;
+}
+
+h4 {
+  margin: 0;
+  padding: 5px;
+}
+
+p {
+  font-family: "montserrat", sans-serif;
+  padding: 10px;
+  margin: 10px;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 45px;
+  padding-bottom: 0.5rem;
+  gap: 30px;
+  overflow-x: auto;
+}
+
+footer {
+  position: sticky;
+  top: 0;
+  padding: 1rem 1.5rem;
+}
+
+footer p {
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+  color: orange;
+}
+
+/************WEBSITE**************/
+
+#website {
+  margin: 0;
+  padding: 0;
+  margin-inline: auto;
+  max-width: 800px;
+}
+
+.iframe_wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+
+  padding-top: 56.25%;
+}
+
+iframe {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+
+hr {
+  margin: 5px;
+}
+
+@media (min-width: 750px) {
+  #website {
+    display: grid;
+    gap: 10px;
+  }
+  #website > article {
+    margin: 10px;
+  }
+  #web {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  #web .container .info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 10px;
+    margin-top: 0;
+    padding: 10px;
+    padding-top: 0px;
+    gap: 5px;
+  }
+
+  .info_billede {
+    max-width: 100px;
+  }
+
+  .info_tekst p {
+    padding-top: 13px;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .info_tekst .beskrivelse h3,
+  p {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #third_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #fourth_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #fourth_section .tekst {
+    place-content: center;
+  }
+
+  #fifth_section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  #sixth_section .billeder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
